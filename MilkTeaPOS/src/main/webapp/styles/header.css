@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+#header-container {
+	box-sizing: border-box; padding : 16px 24px;
+	width: 100vw;
+	height: fit-content;
+	max-height: 76px;
+	background: var(--primary3);
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	padding: 16px 24px;
+}
+
+#header-logo, #header-profile, #header-profile-picture {
+	height: 44px;
+}
+
+#header-logo {
+	object-fit: contain;
+}
+
+#header-profile {
+	padding: 0;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	transition: filter 0.2s;
+}
+
+#header-profile, #header-profile-picture {
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	border-radius: var(--circ-rad);
+}
+
+#header-profile:hover {
+	filter: brightness(0.5);
+}

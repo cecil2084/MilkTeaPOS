@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+#dashboard-main-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.scrollable-main {
+	overflow-y: scroll;
+}
+
+main {
+	box-sizing: border-box;
+	padding: 24px 24px 0 24px;
+	overflow: hidden;
+	position: fixed;
+	left: 84px;
+	top: 76px;
+	width: calc(100vw - 84px);
+	height: calc(100vh - 76px);
+}

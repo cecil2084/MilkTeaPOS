@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+#sidebar-container {
+	box-sizing: border-box;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	height: calc(100vh - 76px);
+	background-color: var(--primary4);
+	top: 76px;
+	padding: 16px;
+}
+
+.side-option{
+	box-sizing: border-box;
+	padding: 14px;
+	border-radius: 8px;
+}
+
+.side-option-icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	aspect-ratio: 1/1;
+}
+
+.side-option:hover {
+	background-color: var(--primary3);
+}
+
+#sidebar-dashboard {
+	background-image: url("../assets/sidebar/chart.svg");
+}
+
+#sidebar-new-order {
+	background-image: url("../assets/sidebar/breakfast.svg");
+}
+
+#sidebar-order-queue {
+	background-image: url("../assets/sidebar/calendar.svg");
+}
+
+#sidebar-inventory {
+	background-image: url("../assets/sidebar/package.svg");
+}
+
+#sidebar-settings {
+	background-image: url("../assets/sidebar/settings.svg");
+}
+
+
+
