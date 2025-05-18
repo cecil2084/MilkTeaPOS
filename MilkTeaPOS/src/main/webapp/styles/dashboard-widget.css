@@ -9,6 +9,9 @@
 	width: 259px;
 	display: flex;
 	flex-direction: column;
+ 	border: 1px solid var(--primary4);
+	border-radius: 8px;
+	
 }
 
 .widget-information {

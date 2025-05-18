@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+#graphs {
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+/* 	display: flex;
+	gap: 16px; */
+}
+
+#line-graph, #bar-graph {
+	box-sizing: border-box;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+/* 	border: 1px solid var(--primary4);
+	border-radius: 8px; */
+}
+
+.graph-title {
+	font-size: 1rem;
+	color: var(--primary1);
+}
+
+#line-graph {
+	width: 60%;
+}
+
+#weekly-sales-chart {
+	width: 100%;
+	height: 400px;
+}
+
+#bar-graph {
+	width: 40%;
+}
+
+#hourly-sales-chart {
+	width: 100%;
+	height: 400px;
+}

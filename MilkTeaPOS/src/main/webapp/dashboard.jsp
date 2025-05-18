@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="styles/sidebar.css" />
 <link rel="stylesheet" href="styles/dashboard.css" />
 <link rel="stylesheet" href="styles/dashboard-widget.css" />
+<link rel="stylesheet" href="styles/dashboard-graphs.css" />
 </head>
 <body>
 
@@ -26,7 +27,7 @@
 	<main id="dashboard-main-container">
 		<div class="scrollable-main">
 
-			<section id="filter-dashboard"></section>
+			<!-- <section id="filter-dashboard"></section> -->
 
 			<section id="widgets">
 				<article class="widget-module" id="total-orders">
@@ -44,18 +45,17 @@
 							</span>
 						</div>
 					</div>
-					<a href="" class="view-detail-btn">
-						<span class="view-detail-text">View detail</span>
-						<span class="view-detail-icon"></span>
+					<a href="" class="view-detail-btn"> <span
+						class="view-detail-text">View detail</span> <span
+						class="view-detail-icon"></span>
 					</a>
 				</article>
-				
+
 				<article class="widget-module" id="total-orders">
 					<div class="widget-information">
 						<div class="widget-header">
-							<img class="widget-icon"
-								src="assets/dashboard/widgets/sales.svg">
-							<h3 class="widget-title">Total sales</h3>
+							<img class="widget-icon" src="assets/dashboard/widgets/sales.svg">
+							<h3 class="widget-title">Total Monthly Sale</h3>
 						</div>
 						<div class="widget-data">
 							<h1 class="widget-data-number">$1,290</h1>
@@ -65,17 +65,16 @@
 							</span>
 						</div>
 					</div>
-					<a href="" class="view-detail-btn">
-						<span class="view-detail-text">View detail</span>
-						<span class="view-detail-icon"></span>
+					<a href="" class="view-detail-btn"> <span
+						class="view-detail-text">View detail</span> <span
+						class="view-detail-icon"></span>
 					</a>
 				</article>
-				
+
 				<article class="widget-module" id="total-orders">
 					<div class="widget-information">
 						<div class="widget-header">
-							<img class="widget-icon"
-								src="assets/dashboard/widgets/sales.svg">
+							<img class="widget-icon" src="assets/dashboard/widgets/sales.svg">
 							<h3 class="widget-title">Net sales</h3>
 						</div>
 						<div class="widget-data">
@@ -86,12 +85,12 @@
 							</span>
 						</div>
 					</div>
-					<a href="" class="view-detail-btn">
-						<span class="view-detail-text">View detail</span>
-						<span class="view-detail-icon"></span>
+					<a href="" class="view-detail-btn"> <span
+						class="view-detail-text">View detail</span> <span
+						class="view-detail-icon"></span>
 					</a>
 				</article>
-				
+
 				<article class="widget-module" id="total-orders">
 					<div class="widget-information">
 						<div class="widget-header">
@@ -107,19 +106,33 @@
 							</span>
 						</div>
 					</div>
-					<a href="" class="view-detail-btn">
-						<span class="view-detail-text">View detail</span>
-						<span class="view-detail-icon"></span>
+					<a href="" class="view-detail-btn"> <span
+						class="view-detail-text">View detail</span> <span
+						class="view-detail-icon"></span>
 					</a>
 				</article>
 			</section>
 
-			<section id="graphs"></section>
+			<section id="graphs">
+				<article id="line-graph">
+					<h3 class="graph-title">Weekly sales report</h3>
+					<canvas id="weekly-sales-chart" height="400"></canvas>
+					<!-- <div id="line-graph-"></div>  -->
+				</article>
+
+				<article id="bar-graph">
+					<h3 class="graph-title">Hourly sales report</h3>
+					<canvas id="hourly-sales-chart" height="400"></canvas>
+				</article>
+			</section>
 		</div>
 	</main>
 
 	<%@ include file="components/footer.jsp"%>
 
 	<script src="javascript/header-state.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="javascript/monthly-sales.js"></script>
+	<script src="javascript/hourly-sales.js"></script>
 </body>
 </html>
